@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/nickdeis/rpe-matrix-calculator/static/css/main.5f361e03.chunk.css",
+    "main.js": "/nickdeis/rpe-matrix-calculator/static/js/main.87b3dea0.chunk.js",
+    "main.js.map": "/nickdeis/rpe-matrix-calculator/static/js/main.87b3dea0.chunk.js.map",
+    "runtime-main.js": "/nickdeis/rpe-matrix-calculator/static/js/runtime-main.ea5796ff.js",
+    "runtime-main.js.map": "/nickdeis/rpe-matrix-calculator/static/js/runtime-main.ea5796ff.js.map",
+    "static/js/2.46350c80.chunk.js": "/nickdeis/rpe-matrix-calculator/static/js/2.46350c80.chunk.js",
+    "static/js/2.46350c80.chunk.js.map": "/nickdeis/rpe-matrix-calculator/static/js/2.46350c80.chunk.js.map",
+    "index.html": "/nickdeis/rpe-matrix-calculator/index.html",
+    "precache-manifest.c3bf46fb4f02da36440e19e7e5ec7f48.js": "/nickdeis/rpe-matrix-calculator/precache-manifest.c3bf46fb4f02da36440e19e7e5ec7f48.js",
+    "service-worker.js": "/nickdeis/rpe-matrix-calculator/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/nickdeis/rpe-matrix-calculator/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.46350c80.chunk.js.LICENSE.txt": "/nickdeis/rpe-matrix-calculator/static/js/2.46350c80.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ea5796ff.js",
+    "static/js/2.46350c80.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.87b3dea0.chunk.js"
+  ]
+}

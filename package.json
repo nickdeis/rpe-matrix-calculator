@@ -40,5 +40,6 @@
   },
   "devDependencies": {
     "@types/mathjs": "^6.0.5"
-  }
+  },
+  "homepage": "https://github-pages.com/nickdeis/rpe-matrix-calculator"
 }

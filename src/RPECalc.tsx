@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
 import { VALID_RPE, VALID_REPS, RPE, balanceRPEMatrix } from "./rpe-calc";
+import "./RPECalc.css";
 
 type RepHeadersProps = {
   roundTo: number;
@@ -20,11 +20,11 @@ class RepsHeaders extends React.PureComponent<RepHeadersProps> {
           </td>
         </tr>
         <tr>
-          <th style={{ width: 75 }} key="RPE">
+          <th className="weight-input" key="RPE">
             RPE
           </th>
           {VALID_REPS.map(rep => (
-            <th style={{ width: 75 }} key={rep}>
+            <th className="weight-input" key={rep}>
               {rep}x
             </th>
           ))}
@@ -79,7 +79,8 @@ class RPEInput extends React.PureComponent<RPEInputProps> {
         data-x={x}
         data-y={y}
         onKeyDown={onKeyDown}
-        style={{ width: 75, fontWeight: 700, ...determineSpectralColor(x, y) }}
+        className="weight-input"
+        style={{ fontWeight: 700, ...determineSpectralColor(x, y) }}
         defaultValue={n}
         ref={node => (this.node = node)}
       />

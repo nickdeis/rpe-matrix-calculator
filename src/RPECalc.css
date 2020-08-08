@@ -1,0 +1,22 @@
+.weight-input {
+    width: 75px;
+}
+
+.valid-reps-header {
+    width: 75px;
+}
+
+@media (max-width: 900px) {
+    .weight-input {
+        width: 45px;
+    }
+}
+
+@media (max-width: 500px) {
+    .weight-input {
+        width: 30px;
+        height: 40px;
+        font-size: 12px;
+        text-align: center;
+    }
+}

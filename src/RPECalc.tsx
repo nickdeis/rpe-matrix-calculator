@@ -72,13 +72,27 @@ class RPEInput extends React.PureComponent<RPEInputProps> {
       this.node.value = String(this.props.n);
     }
   }
+  onMouseDown = () =>{
+    if (this.node) {
+      this.node.placeholder = this.node.value;
+      this.node.value = "";
+    }
+  }
+  onBlur = () => {
+    if (this.node && !this.node.value) {
+      this.node.value = String(this.props.n);
+    }
+  }
   render() {
     const { x, y, n, onKeyDown } = this.props;
     return (
       <input
+        type="number"
         data-x={x}
         data-y={y}
+        onMouseDown={this.onMouseDown}
         onKeyDown={onKeyDown}
+        onBlur={this.onBlur}
         className="weight-input"
         style={{ fontWeight: 700, ...determineSpectralColor(x, y) }}
         defaultValue={n}

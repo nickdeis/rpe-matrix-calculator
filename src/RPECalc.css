@@ -7,16 +7,61 @@
 }
 
 @media (max-width: 900px) {
+    .rpe-calc-table {
+        border-spacing: 0px;
+        padding:10px;
+    }
+
+    .rpe-value-cell {
+        width:30px;
+    }
+    .td-content {
+        font-size: 14px;
+        padding:0;
+    }
+
     .weight-input {
-        width: 45px;
+        width: 50px;
+        font-size: 14px;
+        padding:0;
+        display: block;
+        height:100%;
+        box-sizing: border-box;
+        border: 1px solid black;
+    }
+    .rpe-calc-cell {
+        padding:0;
+    }
+
+    .rpe-calc-row {
+        padding:0;
+    }
+
+    .number-of-reps {
+        font-size:14px;
+        text-align: 'center';
+    }
+
+    .round-to-the-nearest {
+        font-size:14px;
+    }
+    .round-to-the-nearest > input {
+        width:50px
     }
 }
 
 @media (max-width: 500px) {
+    .rpe-calc-table {
+        border-spacing: 0px;
+    }
+
     .weight-input {
         width: 30px;
         height: 40px;
         font-size: 12px;
         text-align: center;
+        padding:0;
+        border:0;
+        border: 1px solid black;
     }
 }

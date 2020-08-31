@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/rpe-matrix-calculator/build/static/css/main.9873573b.chunk.css",
-    "main.js": "/rpe-matrix-calculator/build/static/js/main.8572c0dd.chunk.js",
-    "main.js.map": "/rpe-matrix-calculator/build/static/js/main.8572c0dd.chunk.js.map",
+    "main.css": "/rpe-matrix-calculator/build/static/css/main.8e0db9c0.chunk.css",
+    "main.js": "/rpe-matrix-calculator/build/static/js/main.3cc3f07d.chunk.js",
+    "main.js.map": "/rpe-matrix-calculator/build/static/js/main.3cc3f07d.chunk.js.map",
     "runtime-main.js": "/rpe-matrix-calculator/build/static/js/runtime-main.a5dda449.js",
     "runtime-main.js.map": "/rpe-matrix-calculator/build/static/js/runtime-main.a5dda449.js.map",
     "static/js/2.bc0be25d.chunk.js": "/rpe-matrix-calculator/build/static/js/2.bc0be25d.chunk.js",
     "static/js/2.bc0be25d.chunk.js.map": "/rpe-matrix-calculator/build/static/js/2.bc0be25d.chunk.js.map",
     "index.html": "/rpe-matrix-calculator/build/index.html",
-    "precache-manifest.eb26792eb625bb77e3b30ed3791a0eca.js": "/rpe-matrix-calculator/build/precache-manifest.eb26792eb625bb77e3b30ed3791a0eca.js",
+    "precache-manifest.31d5f7a12a1bacd208f5e8868645e188.js": "/rpe-matrix-calculator/build/precache-manifest.31d5f7a12a1bacd208f5e8868645e188.js",
     "service-worker.js": "/rpe-matrix-calculator/build/service-worker.js",
-    "static/css/main.9873573b.chunk.css.map": "/rpe-matrix-calculator/build/static/css/main.9873573b.chunk.css.map",
+    "static/css/main.8e0db9c0.chunk.css.map": "/rpe-matrix-calculator/build/static/css/main.8e0db9c0.chunk.css.map",
     "static/js/2.bc0be25d.chunk.js.LICENSE.txt": "/rpe-matrix-calculator/build/static/js/2.bc0be25d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a5dda449.js",
     "static/js/2.bc0be25d.chunk.js",
-    "static/css/main.9873573b.chunk.css",
-    "static/js/main.8572c0dd.chunk.js"
+    "static/css/main.8e0db9c0.chunk.css",
+    "static/js/main.3cc3f07d.chunk.js"
   ]
 }

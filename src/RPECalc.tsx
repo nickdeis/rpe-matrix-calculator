@@ -11,20 +11,20 @@ class RepsHeaders extends React.PureComponent<RepHeadersProps> {
     return (
       <thead>
         <tr>
-          <td style={{ textAlign: "center" }} colSpan={VALID_REPS.length + 1}>
+          <td className="number-of-reps" style={{ textAlign: "center" }} colSpan={VALID_REPS.length + 1}>
             <strong>Number of Reps</strong>
-            <span style={{ float: "right" }}>
+            <span className="round-to-the-nearest" style={{ float: "right" }}>
               Round to the nearest{" "}
               <input type="number" onChange={this.props.onRoundChange} defaultValue={this.props.roundTo} />
             </span>
           </td>
         </tr>
         <tr>
-          <th className="weight-input" key="RPE">
+          <th className="td-content" key="RPE">
             RPE
           </th>
           {VALID_REPS.map(rep => (
-            <th className="weight-input" key={rep}>
+            <th className="td-content" key={rep}>
               {rep}x
             </th>
           ))}
@@ -111,18 +111,18 @@ class RPECalc extends React.PureComponent {
   render() {
     const matrix = this.state.rpeMatrix.toArray() as number[][];
     return (
-      <table>
+      <table className="rpe-calc-table">
         <RepsHeaders roundTo={this.state.roundTo} onRoundChange={this.onRoundChange} />
         <tbody>
           {matrix.map((row, y) => {
             return (
-              <tr key={`row-${y}`}>
-                <td style={{ textAlign: "center" }} key={VALID_RPE[y]}>
-                  {VALID_RPE[y]}
+              <tr className="rpe-calc-row" key={`row-${y}`}>
+                <td className="rpe-calc-cell" style={{ textAlign: "center" }} key={VALID_RPE[y]}>
+                  <span className="td-content rpe-value-cell">{VALID_RPE[y]}</span>
                 </td>
                 {row.map((n, x) => {
                   return (
-                    <td key={`${x},${y}`}>
+                    <td className="rpe-calc-cell" key={`${x},${y}`}>
                       <RPEInput x={x} y={y} n={n} onKeyDown={this.onKeyDown} />
                     </td>
                   );

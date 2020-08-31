@@ -17,7 +17,7 @@ export const RPE = math.round(
     ]),
     0.01
   ),
-  3
+  2
 );
 
 type Matrix = typeof RPE;

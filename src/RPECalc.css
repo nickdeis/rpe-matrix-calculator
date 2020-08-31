@@ -1,33 +1,43 @@
 .weight-input {
     width: 75px;
+    padding:1px;
+    display: block;
+    height:100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    text-align: center;
 }
 
 .valid-reps-header {
     width: 75px;
 }
 
+.rpe-calc-table {
+    border-spacing: 0px;
+    padding:10px;
+}
+
+.number-of-reps {
+    text-align: 'center';
+}
+
+.td-content {
+    padding:2px;
+}
+
 @media (max-width: 900px) {
-    .rpe-calc-table {
-        border-spacing: 0px;
-        padding:10px;
-    }
 
     .rpe-value-cell {
         width:30px;
     }
     .td-content {
         font-size: 14px;
-        padding:0;
+        padding:2px;
     }
 
     .weight-input {
         width: 50px;
         font-size: 14px;
-        padding:0;
-        display: block;
-        height:100%;
-        box-sizing: border-box;
-        border: 1px solid black;
     }
     .rpe-calc-cell {
         padding:0;
@@ -39,7 +49,6 @@
 
     .number-of-reps {
         font-size:14px;
-        text-align: 'center';
     }
 
     .round-to-the-nearest {
@@ -59,9 +68,5 @@
         width: 30px;
         height: 40px;
         font-size: 12px;
-        text-align: center;
-        padding:0;
-        border:0;
-        border: 1px solid black;
     }
 }

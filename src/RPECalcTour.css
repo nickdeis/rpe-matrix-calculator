@@ -1,0 +1,16 @@
+
+.shepherd-text {
+    font-size: 13px;
+}
+
+.shepherd-footer {
+    justify-content:center;
+}
+
+
+/**Mobile Portrait**/
+@media (max-width: 500px) {
+    .shepherd-element {
+        max-width: 300px;
+    }
+}

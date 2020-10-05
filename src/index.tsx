@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import RPECalc from './RPECalc';
 import * as serviceWorker from './serviceWorker';
+import RPECalcTour from './RPECalcTour';
 
 ReactDOM.render(
-    <RPECalc />,
+    <RPECalcTour />,
   document.getElementById('root')
 );
 

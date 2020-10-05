@@ -2,9 +2,11 @@ import React from "react";
 import { VALID_RPE, VALID_REPS, RPE, balanceRPEMatrix } from "./rpe-calc";
 import "./RPECalc.css";
 
+
 type RepHeadersProps = {
   roundTo: number;
   onRoundChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onHelp: () => void;
 };
 class RepsHeaders extends React.PureComponent<RepHeadersProps> {
   render() {
@@ -12,7 +14,9 @@ class RepsHeaders extends React.PureComponent<RepHeadersProps> {
       <thead>
         <tr>
           <td className="number-of-reps" style={{ textAlign: "center" }} colSpan={VALID_REPS.length + 1}>
-            <strong>Number of Reps</strong>
+            <span className="left-help-button"></span>
+            <span onClick={this.props.onHelp} className="help-button"></span>
+            <strong className="number-of-reps-span">Number of Reps</strong>
             <span className="round-to-the-nearest" style={{ float: "right" }}>
               Round to the nearest{" "}
               <input type="number" onChange={this.props.onRoundChange} defaultValue={this.props.roundTo} />
@@ -102,7 +106,11 @@ class RPEInput extends React.PureComponent<RPEInputProps> {
   }
 }
 
-class RPECalc extends React.PureComponent {
+type RPECalcProps = {
+  onHelp: () => void;
+}
+
+export default class RPECalc extends React.PureComponent<RPECalcProps> {
   state = {
     rpeMatrix: RPE,
     roundTo: 5
@@ -126,7 +134,7 @@ class RPECalc extends React.PureComponent {
     const matrix = this.state.rpeMatrix.toArray() as number[][];
     return (
       <table className="rpe-calc-table">
-        <RepsHeaders roundTo={this.state.roundTo} onRoundChange={this.onRoundChange} />
+        <RepsHeaders onHelp={this.props.onHelp} roundTo={this.state.roundTo} onRoundChange={this.onRoundChange} />
         <tbody>
           {matrix.map((row, y) => {
             return (
@@ -145,9 +153,17 @@ class RPECalc extends React.PureComponent {
             );
           })}
         </tbody>
+        <tfoot>
+          <tr>
+            <td   className="reactive-link" colSpan={VALID_REPS.length + 1}>
+              <span >
+                Percentages and methods based off <a href="https://www.reactivetrainingsystems.com/Home/Main">Reactive Training Systems</a>
+              </span>
+            </td>
+          </tr>
+        </tfoot>
       </table>
     );
   }
 }
 
-export default RPECalc;

@@ -21,21 +21,27 @@ const tour = new Shepherd.Tour({
 });
 
 const PREVIOUS_BTN =  {
-    text:'Previous',
+    text:'🡸',
     action:tour.back,
     classes:'previous-tour-btn'
 };
 
 const CANCEL_BTN = {
-    text:'Cancel',
+    text:'✖',
     action:tour.cancel,
     classes:'cancel-tour-btn'
 }
 
 const NEXT_BTN = {
-    text: 'Next',
+    text: '➔',
     action: tour.next,
     classes:'next-tour-btn'
+}
+
+const OK_BTN = {
+    text:'OK',
+    action:tour.cancel,
+    classes:'cancel-tour-btn' 
 }
 
 const BUTTONS = [
@@ -79,7 +85,7 @@ const STEPS = [
             element:'.left-help-button',
             on:'bottom'
         },
-        buttons:[PREVIOUS_BTN, CANCEL_BTN]
+        buttons:[PREVIOUS_BTN, OK_BTN]
     }
 ];
 

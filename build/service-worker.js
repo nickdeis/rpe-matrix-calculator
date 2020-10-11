@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/rpe-matrix-calculator/build/precache-manifest.288b1dfe2b59bd18d9aea73dea8c390e.js"
+  "/rpe-matrix-calculator/build/precache-manifest.f354a3e9b9cb692b6f30c0b83580a399.js"
 );
 
 self.addEventListener('message', (event) => {

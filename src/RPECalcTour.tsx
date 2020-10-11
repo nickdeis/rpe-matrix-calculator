@@ -21,7 +21,7 @@ const tour = new Shepherd.Tour({
 });
 
 const PREVIOUS_BTN =  {
-    text:'🢀',
+    text:'⇦',
     action:tour.back,
     classes:'previous-tour-btn'
 };
@@ -33,7 +33,7 @@ const CANCEL_BTN = {
 }
 
 const NEXT_BTN = {
-    text: '🢂',
+    text: '⇨',
     action: tour.next,
     classes:'next-tour-btn'
 }

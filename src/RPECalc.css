@@ -41,9 +41,10 @@
 
 .help-button:before
 {
-    content: '❔';
+    content: '?';
     display: inline-block;
     font-family: sans-serif;
+    font-weight: 900;
     text-align: center;
     width: 2.5ex;
     height: 2.5ex;
